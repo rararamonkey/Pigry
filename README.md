@@ -1,28 +1,32 @@
-# Pigry（ピグリー）
+# Pigry
 
-## 📌 概要
+## 概要
 
 体重・食事・運動を管理できる健康管理アプリです。
 ユーザーは日々の体重や摂取カロリー、運動内容を記録し、目標体重に向けた管理を行うことができます。
 
 ---
 
-## 🛠 環境構築（Docker）
+## 環境構築
 
-### ① リポジトリをクローン
+### Dockerビルド
+
+1. リポジトリをクローン
 
 ```bash
-git clone git@github.com:YOUR_ACCOUNT/pigry.git
-cd pigry
+git clone git@github.com:rararamonkey/Pigry.git
+cd Pigry
 ```
 
-### ② Docker起動
+2. DockerDesktopアプリを立ち上げる
+
+3. Docker起動
 
 ```bash
 docker-compose up -d --build
 ```
 
-### ⚠️ M1 / M2 Mac の場合
+### ※ Mac（M1 / M2）の場合
 
 以下のエラーが出ることがあります：
 
@@ -30,7 +34,7 @@ docker-compose up -d --build
 no matching manifest for linux/arm64/v8
 ```
 
-👉 `docker-compose.yml` に以下を追加
+👉 docker-compose.yml に以下を追加
 
 ```yml
 mysql:
@@ -39,27 +43,27 @@ mysql:
 
 ---
 
-## ⚙️ Laravel環境構築
+## Laravel環境構築
 
-### ① コンテナに入る
+1. コンテナに入る
 
 ```bash
 docker-compose exec php bash
 ```
 
-### ② 依存関係インストール
+2. 依存関係インストール
 
 ```bash
 composer install
 ```
 
-### ③ .env作成
+3. .env作成
 
 ```bash
 cp .env.example .env
 ```
 
-### ④ 環境変数設定
+4. 環境変数設定
 
 ```env
 DB_CONNECTION=mysql
@@ -70,33 +74,28 @@ DB_USERNAME=laravel_user
 DB_PASSWORD=laravel_pass
 ```
 
-### ⑤ アプリキー生成
+5. アプリケーションキー作成
 
 ```bash
 php artisan key:generate
 ```
 
-### ⑥ マイグレーション
+6. マイグレーション実行
 
 ```bash
 php artisan migrate
 ```
 
-### ⑦ シーディング
+7. シーディング実行
 
 ```bash
 php artisan db:seed
 ```
 
-### ⑧ ストレージリンク
-
-```bash
-php artisan storage:link
-```
-
+8. シンボリックリンク作成
 ---
 
-## 💻 使用技術
+## 使用技術（実行環境）
 
 * PHP 8.3.0
 * Laravel 8.83.27
@@ -105,40 +104,19 @@ php artisan storage:link
 
 ---
 
-## 🗄 テーブル設計
+## テーブル設計
 
-* usersテーブル
-* weight_logsテーブル
-* weight_targetテーブル
-
-<img width="798" height="506" alt="image" src="https://github.com/user-attachments/assets/cfb5f096-c25c-498c-b6e8-9e1f92ebdcb2" />
+![テーブル設計](./public/images/table.png)
 
 ---
 
-## 🔗 ER図
+## ER図
 
-<img width="2844" height="1044" alt="image" src="https://github.com/user-attachments/assets/a75a6d7f-362f-43ba-9c6a-a40e27dec854" />
-
----
-
-## 🌐 URL
-
-* 開発環境: http://localhost/
-* phpMyAdmin: http://localhost:8080/
+![ER図](./public/images/er.png)
 
 ---
 
-## 📌 主な機能
+## URL
 
-* ユーザー登録 / ログイン
-* 体重登録
-* 食事・運動記録
-* 目標体重設定
-* データ編集 / 削除
-
----
-
-## 📝 補足
-
-* Docker Desktopを起動してから実行してください
-* 初回は migrate・seed を必ず実行してください
+* 開発環境：http://localhost/
+* phpMyAdmin：http://localhost:8080/
