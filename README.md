@@ -103,13 +103,15 @@ php artisan db:seed
 
 ## テーブル設計
 
-![テーブル設計](./public/images/table.png)
+<img width="797" height="512" alt="image" src="https://github.com/user-attachments/assets/48cc6fbd-7f5b-4d7b-bbd9-d41243166a61" />
+
 
 ---
 
 ## ER図
 
-![ER図](./public/images/er.png)
+<img width="2844" height="1044" alt="image" src="https://github.com/user-attachments/assets/3c33389b-7ead-49a6-80cb-561576d40821" />
+
 
 ---
 
