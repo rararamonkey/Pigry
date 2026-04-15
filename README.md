@@ -111,13 +111,12 @@ php artisan storage:link
 * weight_logsテーブル
 * weight_targetテーブル
 
-※ 詳細はスプレッドシート参照
+<img width="798" height="506" alt="image" src="https://github.com/user-attachments/assets/cfb5f096-c25c-498c-b6e8-9e1f92ebdcb2" />
 
 ---
 
 ## 🔗 ER図
 
-※ ER図画像をここに貼付
 <img width="2844" height="1044" alt="image" src="https://github.com/user-attachments/assets/a75a6d7f-362f-43ba-9c6a-a40e27dec854" />
 
 ---
