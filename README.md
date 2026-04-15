@@ -103,7 +103,8 @@ php artisan db:seed
 
 ## テーブル設計
 
-![テーブル設計](https://github.com/user-attachments/assets/48cc6fbd-75fb-4d7b-bbd9-d41243166a61)
+<img width="797" height="512" alt="image" src="https://github.com/user-attachments/assets/149c0e25-11ab-4781-a128-0b2d89fc7adc" />
+
 
 
 ---
