@@ -1,0 +1,72 @@
+.auth-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.auth-card {
+  width: 400px;
+  background: #fff;
+  border-radius: 16px;
+  padding: 40px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.auth-card h2 {
+  color: #d88cb4;
+  margin-bottom: 10px;
+}
+
+.auth-card p {
+  color: #888;
+}
+
+/* エラー（絶対これでOK） */
+.auth-card .error {
+  color: red;
+  font-size: 12px;
+}
+
+/* フォーム */
+.form-group {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+/*  ここが今回の本命 */
+.input-with-unit {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.input-with-unit input {
+  flex: 1;   /* ← 横並びの鍵 */
+}
+
+.input-with-unit span {
+  white-space: nowrap;
+}
+
+/* ボタン */
+button {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(90deg, #bfa2ff, #ff9ac6);
+  border: none;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.9;
+}

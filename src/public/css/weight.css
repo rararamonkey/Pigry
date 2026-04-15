@@ -1,0 +1,314 @@
+/* =========================
+  共通
+========================= */
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* =========================
+  ヘッダー
+========================= */
+.header {
+  padding: 20px 0;
+}
+
+.header-inner {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 24px;
+  color: #c084fc;
+  font-family: "Hiragino Mincho ProN", "Yu Mincho", serif;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.btn-setting,
+.btn-logout {
+  border: 1px solid #ccc;
+  background: #fff;
+  padding: 6px 12px;
+  border-radius: 6px;
+}
+
+/* =========================
+  サマリー
+========================= */
+.summary-box {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px 40px;
+  margin: 30px 0;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.summary-item {
+  flex: 1;
+  padding: 0 20px;
+}
+
+.summary-item:not(:last-child) {
+  border-right: 1px solid #eee;
+}
+
+.label {
+  font-size: 12px;
+  color: #888;
+}
+
+.value {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* =========================
+  検索エリア
+========================= */
+.search-row {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.search-left form {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.search-left input {
+  width: 180px;
+  height: 43px;
+  padding: 0 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+
+.search-left {
+  margin-left: 20px;
+}
+
+/* =========================
+  ボタン
+========================= */
+.btn-search,
+.btn-reset,
+.btn-add {
+  height: 43px;
+  padding: 0 20px;
+  border-radius: 6px;
+  font-size: 14px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  min-width: 120px;
+}
+
+.btn-search {
+  background: #9a9a9a;
+  color: #fff;
+  border: none;
+}
+
+.btn-reset {
+  background: #fff;
+  border: 1px solid #ccc;
+  color: #666;
+}
+
+.btn-add {
+  background: linear-gradient(90deg, #a18cd1, #fbc2eb);
+  color: #fff;
+  border: none;
+  font-weight: bold;
+}
+
+/* =========================
+  テーブル
+========================= */
+.table-wrapper {
+  background: #fff;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table th {
+  padding: 12px;
+  color: #888;
+  border-bottom: 2px solid #eee;
+}
+
+.table td {
+  padding: 14px 12px;
+  border-bottom: 1px solid #eee;
+}
+
+.edit-btn {
+  border: 1px solid #ccc;
+  background: #fff;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* =========================
+ /* モーダル全体 */
+.modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.5);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal.hidden {
+  display: none;
+}
+
+/* モーダル中身 */
+.modal-content {
+  width: 500px;
+  background: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  position: relative; /* ← ゴミ箱の位置用 */
+}
+
+/* 入力欄 */
+input,
+textarea {
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+
+/* ボタンエリア */
+.modal-buttons {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+/* 共通：サイズ・形だけ揃える */
+.modal-buttons button {
+  padding: 12px 40px;   /* ← 横幅アップ */
+  border-radius: 10px;  /* ← 丸み統一 */
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* 戻る（そのままグレー） */
+#closeEditModal {
+  background: #eee;
+  color: #333;
+}
+
+/* 更新（紫） */
+button[type="submit"] {
+  background: linear-gradient(90deg, #bfa2ff, #ff9ac6);
+  color: #fff;
+}
+
+/* ゴミ箱 */
+.btn-delete {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+
+  font-size: 20px;
+  color: #ff4d4d;
+  background: none;
+  border: none;
+}
+/* =========================
+  目標体重ページ
+========================= */
+.goal-container {
+  width: 500px;
+  margin: 60px auto;
+  background: #fff;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.goal-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.goal-form-group label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.goal-input-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.goal-input-row input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+
+.goal-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.btn-back {
+  background: #eee;
+  padding: 12px 40px;
+  border-radius: 10px;
+  text-decoration: none;
+  color: #333;
+}
+
+.btn-submit {
+  background: linear-gradient(90deg, #bfa2ff, #ff9ac6);
+  color: #fff;
+  padding: 12px 40px;
+  border-radius: 10px;
+  border: none;
+}
+/* エラーメッセージ */
+.error {
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
+}

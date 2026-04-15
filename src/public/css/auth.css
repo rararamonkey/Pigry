@@ -1,0 +1,92 @@
+.auth-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #d28ff6 0%, #f3c2d7 20%, #f5decc 80%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.auth-card {
+  width: 400px;
+  background: #fff;
+  border-radius: 16px;
+  padding: 40px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.auth-card .logo {
+  font-size: 32px;
+  font-weight: bold;
+  color: #e9a6ff;
+  margin-bottom: 10px;
+}
+
+.auth-card .title {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+/* フォーム */
+.form-group {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-family: "Helvetica", "Arial", sans-serif;
+}
+
+input::placeholder {
+  color: #bbb;
+  font-size: 14px;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(90deg, #bfa2ff, #ff9ac6);
+  border: none;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+/* エラー */
+.error {
+  color: red;
+  font-size: 12px;
+}
+
+/* 下リンク */
+.login-link {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.login-link a {
+  color: #6aa9ff;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.login-link a:hover {
+  text-decoration: underline;
+}

@@ -1,0 +1,52 @@
+body {
+  font-family: sans-serif;
+}
+/* common.css */
+.auth-card .logo {
+  font-size: 48px;
+  font-weight: bold;
+  color: #d88cb4;
+}
+/* ロゴ */
+.logo {
+    font-family: "Hiragino Mincho ProN", "Yu Mincho", serif;
+    font-weight: bold;
+    color: #d88cb4;
+    
+}
+
+/* 共通ボタン */
+.btn-outline {
+    border: 1px solid #999;
+    background: white;
+    color: #666;
+    padding: 6px 12px;
+    border-radius: 6px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.btn-outline:hover {
+    background: #f2f2f2;
+    border-color: #666;
+    color: #333;
+}
+.header-inner {
+  width: 100%;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;  /* ← これに変更🔥 */
+}
+.header-right {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.header {
+    width: 100%;   /* ← これ追加🔥 */
+}
+body {
+  margin: 8px;  ← ブラウザデフォルト🔥
+}
