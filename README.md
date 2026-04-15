@@ -103,7 +103,7 @@ php artisan db:seed
 
 ## テーブル設計
 
-![テーブル設計](https://github.com/user-attachments/assets/48cc6fbd-7f5b-4d7b-bbd9-d41243166a61" />
+![テーブル設計](https://github.com/user-attachments/assets/48cc6fbd-75fb-4d7b-bbd9-d41243166a61)
 
 
 ---
